@@ -87,7 +87,7 @@ class ProductProvider extends Component {
 
     this.setState(
       {
-        car: [...tempCart]
+        cart: [...tempCart]
       },
       () => {
         this.addTotals();
@@ -110,7 +110,7 @@ class ProductProvider extends Component {
       product.total = product.count * product.price;
       this.setState(
         {
-          car: [...tempCart]
+          cart: [...tempCart]
         },
         () => {
           this.addTotals();
